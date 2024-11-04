@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App container styling */
+.app {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and button container styling */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Scrollable task list container */
+.task-list-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Task item styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #f9fafb;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Text container styling */
+.task-text-container {
+  flex: 1;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Buttons container styling */
+.button-container {
+  display: flex;
+  gap: 5px;
+}
+
+/* Button styles */
+.button-container button {
+  background-color: #ff5c5c;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #d94343;
+}
+
+.button-container .edit-button {
+  background-color: #ffc107;
+}
+
+.button-container .edit-button:hover {
+  background-color: #e0a800;
+}
+
+/* Edit input field */
+.edit-input {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  #taskInput, button {
+    width: 100%;
+    margin-top: 10px;
+  }
+/* Input container styling, adding styles for select dropdown */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+/* Styling for the dropdown */
+#sortDropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+}
+
+#sortDropdown:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+}

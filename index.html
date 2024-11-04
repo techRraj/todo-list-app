@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script> 
+</head>
+<body>
+  <div class="app">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button onclick="addTask()">Add Task</button>
+      
+        <select id="sortDropdown" onchange="sortTasks(this.value)">
+          <option value="">Sort</option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+     
+      
+    </div>
+   
+
+    <div class="task-list-container">
+      <ul id="taskList">
+        <!-- Task items will be dynamically added here -->
+      </ul>
+    </div>
+  </div>
+  
+</body>
+</html>
